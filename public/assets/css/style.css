@@ -1,0 +1,133 @@
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+body{
+    font-family:'Segoe UI', sans-serif;
+    min-height:100vh;
+
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+
+    position:relative;
+    overflow-x:hidden;
+}
+
+/* ===== BACKGROUND BLOBS ===== */
+body::before,
+body::after{
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:0;
+}
+
+body::before{
+    background:#60a5fa;
+    top:-100px;
+    left:-100px;
+}
+
+body::after{
+    background:#a78bfa;
+    bottom:-100px;
+    right:-100px;
+}
+
+/* ===== AUTH PAGE (login/register) ===== */
+.auth-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* ===== CONTAINER (card dùng chung) ===== */
+.container{
+    width:380px;
+    margin:40px auto;
+    padding:30px;
+    border-radius:16px;
+
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(15px);
+
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 10px 40px rgba(0,0,0,0.1);
+
+    position:relative;
+    z-index:1;
+}
+
+/* ===== TITLE ===== */
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+/* ===== INPUT ===== */
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+
+    border-radius:10px;
+    border:1px solid #e2e8f0;
+    background:rgba(255,255,255,0.7);
+}
+
+input:focus{
+    outline:none;
+    border-color:#6366f1;
+    box-shadow:0 0 6px rgba(99,102,241,0.4);
+}
+
+/* ===== BUTTON ===== */
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+
+    background: linear-gradient(135deg,#6366f1,#3b82f6);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+/* ===== LINK ===== */
+a{
+    display:block;
+    text-align:center;
+    margin-top:12px;
+    color:#6366f1;
+    text-decoration:none;
+}
+
+/* ===== ERROR ===== */
+.error{
+    background:#fee2e2;
+    color:#b91c1c;
+    padding:10px;
+    border-radius:8px;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+/* ===== TEXT ===== */
+.container p{
+    margin:8px 0;
+    font-size:15px;
+}
