@@ -1,6 +1,6 @@
 <?php
-require_once 'app/models/Cart.php';
-require_once 'app/models/Product.php';
+require_once __DIR__ .'/../models/Cart.php';
+require_once __DIR__ .'/../models/Product.php';
 
 class CartService {
 

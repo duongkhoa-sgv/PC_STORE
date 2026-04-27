@@ -16,18 +16,20 @@ $routes = [
     'login_action' => ['AuthController', 'login'],
     'register_action' => ['AuthController', 'register'],
     'logout_action' => ['AuthController', 'logout'],
-    'profile' => ['AuthController', 'profile', 'auth'],
+
     // ===== HOME =====
     'home' => function () {
         echo "<h1>Home Page</h1>";
+    },
+
     // ===== CART =====
     'cart' => ['CartController', 'view'],
     'cart_add' => ['CartController', 'add'],
     'cart_remove' => ['CartController', 'remove'],
+
     // ===== ORDER =====
     'checkout' => ['OrderController', 'checkout', 'auth'],
     'orders' => ['OrderController', 'history', 'auth'],
-    },
 ];
 
 

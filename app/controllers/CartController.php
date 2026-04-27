@@ -1,5 +1,5 @@
 <?php
-require_once 'app/services/CartService.php';
+require_once __DIR__ . '/../services/CartService.php';
 
 class CartController {
 
